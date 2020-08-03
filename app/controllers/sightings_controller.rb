@@ -6,6 +6,7 @@ class SightingsController < ApplicationController
       render json: sighting, include: [:bird, :location]
     else 
       render json: {message: 'No sighting found with that id'}
+    end
   end 
   
   def index
